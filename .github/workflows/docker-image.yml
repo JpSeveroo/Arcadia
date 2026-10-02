@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+        
+    - name: Build the Docker image
+      run: docker build -t catalogo:latest .
+
+    - name: Deploy Docker Image
+      run: | 
+          docker run -d \
+          --name catalogo \
+          -p 8080:80 \
+          catalogo:latest 
