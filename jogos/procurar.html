@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos - Consultar Catálogo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h3 class="card-title mb-3">Catálogo de Jogos</h3>
+        
+        <form class="row g-2">
+          <div class="col-md-9">
+            <input type="text" class="form-control" placeholder="Buscar por título ou ano...">
+          </div>
+          <div class="col-md-3 d-grid">
+            <button type="button" class="btn btn-primary">Pesquisar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Lista de Jogos</h5>
+        <a href="inserir.html" class="btn btn-sm btn-success">+ Novo Jogo</a>
+      </div>
+
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover mb-0 align-middle">
+            <thead class="table-secondary">
+              <tr>
+                <th>#</th>
+                <th>Título</th>
+                <th>Ano</th>
+                <th>Preço</th>
+                <th>Multiplayer</th>
+                <th class="text-center">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>1</td>
+                <td class="fw-semibold">The Witcher 3: Wild Hunt</td>
+                <td>2015</td>
+                <td>R$ 129,90</td>
+                <td><span class="badge bg-secondary">Não</span></td>
+                <td class="text-center">
+                  <a href="alterar.html" class="btn btn-sm btn-warning">Editar</a>
+                  <a href="excluir.html" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td class="fw-semibold">Counter-Strike 2</td>
+                <td>2023</td>
+                <td>Grátis</td>
+                <td><span class="badge bg-success">Sim</span></td>
+                <td class="text-center">
+                  <a href="alterar.html" class="btn btn-sm btn-warning">Editar</a>
+                  <a href="excluir.html" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td class="fw-semibold">Elden Ring</td>
+                <td>2022</td>
+                <td>R$ 249,90</td>
+                <td><span class="badge bg-success">Sim</span></td>
+                <td class="text-center">
+                  <a href="alterar.html" class="btn btn-sm btn-warning">Editar</a>
+                  <a href="excluir.html" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card-footer text-end">
+        <a href="../index.html" class="btn btn-outline-secondary">Voltar ao Menu Principal</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
