@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Excluir Série - Catálogo</title>
+        <title>Pesquisar Série - Catálogo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body class="bg-light">
@@ -43,7 +43,50 @@
                     <a href="inserir.html" class="btn btn-sm btn-success">+ Nova Série</a>
                 </div>
 
-                
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover mb-0 align-middle">
+                            <caption class="visually-hidden">
+                                Séries e suas informações
+                            </caption>
+
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Título</th>
+                                    <th scope="col">Temporadas</th>
+                                    <th scope="col">Nota</th>
+                                    <th scope="col">Finalizada</th>
+                                    <th scope="col" class="text-center">Ações</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="fw-semibold">Breaking Bad</td>
+                                    <td>5</td>
+                                    <td>4,8</td>
+                                    <td>
+                                        <span class="badge bg-success">Sim</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="alterar.html"
+                                       class="btn btn-sm btn-warning">
+                                        Editar
+                                        </a>
+                                        <a href="excluir.html"
+                                        class="btn btn-sm btn-danger">
+                                            Excluir
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </main>
     </body>
